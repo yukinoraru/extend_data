@@ -1,4 +1,8 @@
 # ExtendData
+[![Gem Version](https://badge.fury.io/rb/extend_data.svg)](http://badge.fury.io/rb/extend_data)
+[![Coverage Status](https://coveralls.io/repos/yukinoraru/extend_data/badge.png)](https://coveralls.io/r/yukinoraru/extend_data)
+[![Code Climate](https://codeclimate.com/github/yukinoraru/extend_data.png)](https://codeclimate.com/github/yukinoraru/extend_data)
+[![Build Status](https://travis-ci.org/yukinoraru/extend_data.svg?branch=master)](https://travis-ci.org/yukinoraru/extend_data)
 
 `Object::EXTEND_DATA` is an alternative for `Object::DATA`.
 It's a Hash-like accessor for multiple data sections of the executed file.
