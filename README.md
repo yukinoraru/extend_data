@@ -1,6 +1,27 @@
 # ExtendData
 
-TODO: Write a gem description
+`Object::EXTEND_DATA` is an alternative for `Object::DATA`.
+It's a Hash-like accessor for multiple data sections of the executed file.
+
+To create multiple data sections use `__${SECTION_NAME}__` below `__END__`, then you can access via `EXTEND_DATA["SECTION_NAME"]`.
+
+## Usage
+After `require 'extend_data'`, you can use `Object::EXTEND_DATA` constant.
+
+	require 'extend_data'
+	puts EXTEND_DATA["SECTION1"], EXTEND_DATA["SECTION2"], EXTEND_DATA["SECTION3"]
+	#=> "data1"
+	    "data2"
+	    "data3"
+
+	__END__
+	data0
+	__SECTION1__
+	data1
+	__SECTION2__
+	data2
+	__SECTION3__
+	data3
 
 ## Installation
 
@@ -15,10 +36,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install extend_data
-
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 
